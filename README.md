@@ -1,3 +1,7 @@
+[![make.fun - bring-the-humans-03](https://make.fun/badge/bring-the-humans-03.svg)](https://make.fun/bounty/bring-the-humans-03?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
+[![rank](https://make.fun/badge/bring-the-humans-03/jusst01/makefun-tiktok-golden/rank.svg)](https://make.fun/bounty/bring-the-humans-03/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
+[![reward](https://make.fun/badge/bring-the-humans-03/jusst01/makefun-tiktok-golden/reward.svg)](https://make.fun/bounty/bring-the-humans-03?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
+
 # KINETIC — a make.fun TikTok ad
 
 [![1st](https://make.fun/badge/bring-the-humans-03/1.svg)](https://make.fun/bounty/bring-the-humans-03)
