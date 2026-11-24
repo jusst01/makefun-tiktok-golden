@@ -11,7 +11,7 @@
  * Exit 0 on success, exit 1 with a clear message on any failure.
  */
 
-import { copyFileSync, existsSync, mkdirSync, statSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readFileSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 
 const FILE = "VIDEO.json";
@@ -32,6 +32,18 @@ function main(): void {
   }
   if (!existsSync(src) || !statSync(src).isFile()) {
     fail(`source file not found: ${src}`);
+  }
+
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(readFileSync(src, "utf8"));
+  } catch (err) {
+    fail(`${src} is not valid JSON: ${(err as Error).message}`);
+  }
+
+  const url = (parsed as { url?: unknown } | null)?.url;
+  if (typeof url !== "string" || !url.startsWith("https://")) {
+    fail(`${src} must contain a "url" string starting with https://`);
   }
 
   try {
